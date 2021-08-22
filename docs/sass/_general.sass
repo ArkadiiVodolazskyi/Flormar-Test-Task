@@ -1,0 +1,69 @@
+/* __________________ Reset styles __________________ */
+
+*
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	color: inherit
+	box-sizing: border-box
+	line-height: inherit
+
+/* __________________ Tags __________________ */
+
+html
+	max-width: 100vw
+	scroll-behavior: unset
+	position: relative
+	font-smooth: antialiased
+	-webkit-font-smoothing: antialiased
+	font-size: 18px
+	line-height: 30px
+	line-height: $line-height-primary
+	font-family: $font-family-primary
+
+
+body
+	width: 100%
+	height: 100%
+	position: relative
+	z-index: 1
+	&.discroll
+		overflow: hidden
+
+section
+	position: relative
+	z-index: 5
+	max-width: 100vw
+	overflow: hidden
+
+li, span, a
+	display: inline-block
+
+a
+	text-decoration: none
+	transition: all 0.3s ease
+svg
+	transition: fill 0.3s ease
+
+button
+	-moz-appearance: none
+	-webkit-appearance: none
+	appearance: none
+	background: none
+	text-align: center
+	cursor: pointer
+	transition: all 0.3s ease
+
+/* __________________ Clssses __________________ */
+
+.wrapper
+	width: 77% // 1100px / 1440px
+	margin: 0 auto
+	position: relative
+	z-index: 5
+
+.loading
+	position: relative
+	opacity: 0
+	visibility: hidden

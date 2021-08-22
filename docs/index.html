@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flormar - Test Task</title>
+
+	<link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+
+	<div id="overlay" class="active"></div>
+
+	<header id="main_header">
+		<div class="wrapper">
+			<button id="expand_mobile_menu" class="active">
+				<svg class="hamb" width="36" height="32">
+					<use xlink:href="./img/icons.svg#hamburger"></use>
+				</svg>
+				<svg class="close" width="36" height="32">
+					<use xlink:href="./img/icons.svg#cross"></use>
+				</svg>
+			</button>
+		</div>
+	</header>
+
+	<header id="mobile_header" class="active">
+		<div class="wrapper">
+			<nav>
+				<ul class="main_links">
+					<li>
+						<a href="#">שדח</a>
+						<ul class="sublinks">
+							<li><a href="#">HEBA COSMETICS</a></li>
+							<li><a href="#">GAMESCAPE COLLECTION</a></li>
+							<li><a href="#">HEALTHY GLOW</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="banner_main">
+		<div class="slider loading">
+			<a href="#" class="slide">
+				<img src="./img/Slider_1.png" alt="slider_image">
+			</a>
+			<a href="#" class="slide">
+				<img data-lazy="./img/Slider_2.png" alt="slider_image">
+			</a>
+			<a href="#" class="slide">
+				<img data-lazy="./img/Slider_3.png" alt="slider_image">
+			</a>
+		</div>
+		<div class="slider_nav"></div>
+	</section>
+
+	<section id="products" class="products">
+		<div class="wrapper">
+
+			<div class="info loading">
+				<h3>?םוספיא םרול ,לאזעזעל ,הז המ</h3>
+				<div class="text">
+					<p>וא טסקט ימד םג םימעפל ארקנה - ןיטולחל תועמשמ רסח טסקטל יוניכ אוה םוספיא םרול
+						ירתא ,תועדומ ,םיניזגמ ,םינולע לש - תויבוציע תוציקסב םקוממ תויהל דעוימו - שירבי'ג
+					</p>
+					<p>וא טסקט ימד םג םימעפל ארקנה - ןיטולחל תועמשמ רסח טסקטל יוניכ אוה םוספיא םרול
+						ירתא ,תועדומ ,םיניזגמ ,םינולע לש - תויבוציע תוציקסב םקוממ תויהל דעוימו - שירבי'ג
+					</p>
+					<p>וא טסקט ימד םג םימעפל ארקנה - ןיטולחל תועמשמ רסח טסקטל יוניכ אוה םוספיא םרול
+						ירתא ,תועדומ ,םיניזגמ ,םינולע לש - תויבוציע תוציקסב םקוממ תויהל דעוימו - שירבי'ג
+					</p>
+				</div>
+				<!-- <button class="toggle_text">
+					Read more
+					<svg width="10" height="6">
+						<use xlink:href="./img/icons.svg#arrow_down"></use>
+					</svg>
+				</button> -->
+			</div>
+
+			<div class="products">
+				<div class="cards">
+
+					<a href="#" class="card">
+						<div class="thumb">
+							<img src="./img/product_1.png" alt="product_thumb">
+						</div>
+						<h4 class="name">
+							FLORMAR - EYEBROW SHADOW
+						</h4>
+						<div class="attributes">
+							<div class="price">
+								<span class="value">35</span>
+								<span class="units">₪</span>
+							</div>
+							<div class="quantity">
+								<span class="value">4</span>
+								<span class="units">םיעבצ</span>
+							</div>
+						</div>
+						<button class="quick_review">
+							סקירה מהירה
+						</button>
+					</a>
+					<a href="#" class="card">
+						<div class="thumb">
+							<img src="./img/product_2.png" alt="product_thumb">
+						</div>
+						<h4 class="name">
+							FLORMAR - EYEBROW SHADOW
+						</h4>
+						<div class="attributes">
+							<div class="price">
+								<span class="value">35</span>
+								<span class="units">₪</span>
+							</div>
+							<div class="quantity">
+								<span class="value">4</span>
+								<span class="units">םיעבצ</span>
+							</div>
+						</div>
+						<button class="quick_review">
+							סקירה מהירה
+						</button>
+					</a>
+					<a href="#" class="card">
+						<div class="thumb">
+							<img src="./img/product_1.png" alt="product_thumb">
+						</div>
+						<h4 class="name">
+							FLORMAR - EYEBROW SHADOW
+						</h4>
+						<div class="attributes">
+							<div class="price">
+								<span class="value">35</span>
+								<span class="units">₪</span>
+							</div>
+							<div class="quantity">
+								<span class="value">4</span>
+								<span class="units">םיעבצ</span>
+							</div>
+						</div>
+						<button class="quick_review">
+							סקירה מהירה
+						</button>
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>

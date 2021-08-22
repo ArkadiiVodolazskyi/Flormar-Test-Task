@@ -1,0 +1,136 @@
+
+section.banner_main
+	position: relative
+	height: 810px
+	.slider
+		transition: all 0.5s ease-in
+	.slide
+		display: inline-block
+		width: 100%
+		height: 810px
+		position: relative
+		overflow: hidden
+		img
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 100%
+			height: auto
+	.slider_nav
+		position: absolute
+		z-index: 10
+		padding: 24px 0
+		bottom: 0
+		left: 0
+		width: 100%
+	.slick-dots
+		display: flex
+		justify-content: center
+		align-items: center
+		gap: 24px
+		li
+			button
+				color: $tsp
+				background-color: $w
+				border-radius: 50%
+				width: 10.43px
+				height: 10.43px
+			&.slick-active button
+				background-color: $interactive-color
+
+section.products
+	padding: 60px 0 114px
+	.info
+		max-width: 680px
+		h3
+			font-size: 28px
+			font-weight: 500
+			line-height: 41px
+		.text
+			margin-top: 8px
+			max-height: 500px
+			overflow: hidden
+			&.wrapped_text
+				max-height: 60px
+			p
+				font-size: 18px
+				&:not(:first-child)
+					margin-top: 12px
+		.toggle_text
+			direction: ltr
+			margin-top: 15px
+			text-transform: uppercase
+			font-size: 12px
+			font-weight: 500
+			display: flex
+			align-items: center
+			gap: 6px
+			svg
+				fill: $interactive-color
+			&:hover
+				color: $interactive-color
+			&.active svg
+				transform: rotate(180deg)
+	.products
+		margin-top: 45px
+	.cards
+		display: flex
+		flex-wrap: wrap
+		gap: 98px
+	.card
+		width: calc( 100% / 3 - 66px )
+		&:hover
+			.thumb img
+				transform: translate(-50%, -50%) scale(1.05)
+				filter: drop-shadow(0 0 7px rgba($b, 0.1))
+			.name
+				color: $interactive-color
+		.thumb
+			height: 277px
+			overflow: hidden
+			position: relative
+			img
+				width: auto
+				height: auto
+				max-height: 95%
+				max-width: 95%
+				position: absolute
+				left: 50%
+				top: 50%
+				transition: all 0.25s ease
+				transform: translate(-50%, -50%)
+		.name
+			margin-top: 10px
+			font-size: 16px
+			font-weight: 400
+			font-family: $font-family-secondary
+			text-align: center
+			transition: all 0.25s ease
+		.attributes
+			display: flex
+			align-items: center
+			justify-content: space-between
+		.price
+			font-size: 0
+			span
+				font-size: 16px
+				font-weight: 500
+		.quantity
+			font-size: 0
+			span
+				font-size: 16px
+				font-weight: 500
+				color: rgba($b, 0.5)
+		.quick_review
+			width: 90%
+			margin: 18px auto 0
+			padding: 8px 0
+			font-weight: 500
+			font-size: 16px
+			text-align: center
+			border: 1px solid $b
+			&:hover
+				border-color: $interactive-color
+				color: $interactive-color
+
